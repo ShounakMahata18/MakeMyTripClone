@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best destination for your holiday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="IMG/MakeMyTrip-logo.png" alt="">
+                </div>
+                <div class="right">
+                    <ul id="show-none">
+                        <div class="user-section badge">
+                            <i class="fa fa-thin fa-tag"></i>
+                            <div class="context">
+                                <li><a href="#">Super Offers</a></li>
+                                <p>Explore great deals & offers</p>
+                            </div>
+                    </div>
+                    <div class="user-section business">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <div class="context">
+                            <li><a href="#">Introducing myBiz</a></li>
+                            <p>Business travel solution</p>
+                        </div>
+                    </div>
+                    <div class="user-section trips">
+                        <i class="fa fa-duotone fa-suitcase-rolling"></i>
+                        <div class="context">
+                            <li><a href="#">My Trips</a></li>
+                            <p>Manage your Bookings</p>
+                        </div>
+                    </div>
+                    <div class="user-section lang">
+                        <img src="/IMG/india-flag.png" alt="">
+                        <div class="context">
+                            <li><a href="#">IN|ENG|INR</a></li>
+                        </div>
+                    </div>
+                </ul>
+                <div class="right-nav">
+                    <div class="user-section login">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="context">
+                            <li><a href="#">Login or Create Account</a></li>
+                        </div>
+                    </div>
+                    <div id="menu" onclick="onClickMenu()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="all-services">
+                <div class="services">
+                    <div class="service flight">
+                        <a href="#">
+                            <i class="fa fa-duotone fa-plane"></i>
+                            <p>Flights</p>
+                        </a>
+                    </div>
+                    <div class="service hotels">
+                        <a href="#">
+                            <i class="fa fa-thin fa-hotel"></i>
+                            <p>Hotels</p>
+                        </a>
+                    </div>
+                    <div class="service homestays">
+                        <a href="#">
+                            <i class="fa fa-solid fa-house"></i>
+                            <p>Homestays</p>
+                        </a>
+                    </div>
+                    <div class="service holiday-package">
+                        <a href="#">
+                            <i class="fa fa-light fa-mug-hot"></i>
+                            <div class="multi-line">
+                                <p>Holiday&nbsp;</p>
+                                <p>Package</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="service trains">
+                        <a href="#">
+                            <i class="fa fa-light fa-train"></i>
+                            <p>Trains</p>
+                        </a>
+                    </div>
+                    <div class="service buses">
+                        <a href="#">
+                            <i class="fa-solid fa-bus"></i>
+                            <p>Buses</p>
+                        </a>
+                    </div>
+                    <div class="service cabs">
+                        <a href="#">
+                            <i class="fa-solid fa-taxi"></i>
+                            <p>Cabs</p>
+                        </a>
+                    </div>
+                    <div class="service forex">
+                        <a href="#">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                            <p>Forex</p>
+                        </a>
+                    </div>
+                    <div class="service hotelscharter-flights">
+                        <a href="#">
+                            <i class="fa-solid fa-jet-fighter-up"></i>
+                            <div class="multi-line">
+                                <p>Charter&nbsp;</p>
+                                <p>Flights</p>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            </div>
+            <div class="container">
+                <div class="desc">
+                    <div class="way" id="wayjs">
+                        <input name="tripway" id="oneway" type="radio" value="oneway">
+                        <label for = "oneway">One Way</label>
+                        <input name="tripway" id="roundtrip" type="radio" value="roundtrip">
+                        <label for="roundtrip">Round trip</label>
+                        <input name="tripway" id="multicity" type="radio" value="multicity">
+                        <label for="multicity">Multi City</label>
+                    </div>
+                    <p>Book International and Domestic Flights</p>
+                </div>
+                <div class="travel">
+                    <div class="orient1">
+                        <div class="from orientation1">
+                            <h2>From</h2>
+                            <select class="from-selector selector" id="from">
+                                <option value="">
+                                    <h3>Enter Origin</h3>
+                                </option>
+                                <option value="Kolkata" class="kolkata city">
+                                    <h3>Kolkata</h3>
+                                    <div class="cities"><p>CCU,Netaji Subhas Chandra Bose International Airport</p></div>
+                                </option>
+                                <option value="Dubai" class="dubai city">
+                                    <h3>Dubai</h3>
+                                    <div class="cities"><p>BXB,Dubai International Anited Arab Emirates</p></div>
+                                </option>
+                            </select>
+                        </div>
+                        <div class="to orientation1">
+                            <h2>To</h2>
+                            <select class="to-selector selector" id="to">
+                                <option value="">
+                                    <h3>Enter Destination</h3>
+                                </option>
+                                <option value="Dubai" class="dubai city">
+                                    <h3>Dubai</h3>
+                                    <div class="cities"><p>BXB,Dubai International Anited Arab Emirates</p></div>
+                                </option>
+                                <option value="Kolkata" class="kolkata city">
+                                    <h3>Kolkata</h3>
+                                    <div class="cities"><p>CCU,Netaji Subhas Chandra Bose International Airport</p></div>
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="orient2">
+                        <div class="departure orientation2">
+                            <h2>Departure</h2>
+                            <input type="date" id="departure-date">
+                        </div>
+                        <div class="return orientation2">
+                            <h2>Return</h2>
+                            <input type="date" id="return-date">
+                            <p>Not Compalsory</p>
+                        </div>
+                    </div>
+                    <div class="travellers orientation3">
+                        <h2>Travellers & Class</h2>
+                        <div class="no-of-traveller">
+                            <select class="traveller" id="totaltravellers">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="9">More Than 7</option>
+                            </select>
+                            <p>Traveller</p>
+                        </div>
+                        <div class="travel-class">
+                            <select id="traveller-class">
+                                <option value="Economy">Economy</option>
+                                <option value="Primium Economy">Primium Economy</option>
+                                <option value="Business">Business</option>
+                                <option value="First Class">First class</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="eligibility">
+                    <div class="eligibility-left">
+                        <h3>Select A Fair Type</h3>
+                        <div class="radio">
+                            <input name="fairtype" id="regular" type="radio" value="Regular Fees">
+                            <label for="regular">Regular fees</label>
+                            <input name="fairtype" id="armedforces" type="radio" value="Armed Forces Fees">
+                            <label for="armedforces">Armed Forces Fees</label>
+                            <input name="fairtype" id="studentfee" type="radio" value="Student Fees">
+                            <label for="studentfee">Student Fees</label>
+                            <input name="fairtype" id="seniorcitizen" type="radio" value="Senior Citizen Fees">
+                            <label for="seniorcitizen">Senior Citizen Fees</label>
+                            <input name="fairtype" id="doctornurse" type="radio" value="Doctor & Nurses Fees">
+                            <label for="doctornurse">Doctor & Nurses Fees</label>
+                        </div>
+                    </div>
+                    <div class="eligibility-right">
+                        <h3>Treanding Searches</h3>
+                        <div class="search">
+                            <p>Mumbai</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <p>Goa</p>
+                        </div>
+                        <div class="search">
+                            <p>kolkata</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <p>Dubai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-btn">
+                <a href="/search.html" id="submit">SEARCH</a>
+            </div>
+            <div class="explore-more">
+                <i class="fa-solid fa-angles-down"></i>
+                <p>Explore More</p>
+                <i class="fa-solid fa-angles-down"></i>
+            </div>
+            <div class="second-container">
+                <div class="where-2-go">
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <a href="#">Where2Go</a>
+                </div>
+                <div class="trip-money">
+                    <i class="fa-solid fa-image"></i>
+                    <div class="order order1">
+                        <a href="#">Trip Money</a>
+                        <p>Loan Cradit and More ...</p>
+                    </div>
+                </div>
+                <div class="intrnational-flights">
+                    <i class="fa-solid fa-city"></i>
+                    <div class="order order2">
+                        <a href="#">Explore International Flights</a>
+                        <p>Cheapest Flights to Paris, Bali, Tokyo and more ...</p>
+                    </div>
+                </div>
+                <div class="mice">
+                    <i class="fa-solid fa-users"></i>
+                    <div class="order order3">
+                        <a href="#">MICE</a>
+                        <p>Office Event and Meeting</p>
+                    </div>
+                </div>
+                <div class="gift-card">
+                    <i class="fa-solid fa-address-card"></i>
+                    <a href="#">Gift Card</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <div class="handpicked-collection">
+            <h2>Handpicked Collection For You</h2>
+            <div class="slider">
+                <div class="top1 preset">
+                    <img src="https://source.unsplash.com/260x400/?beach maldives,Lakshadeep beaches">
+                    <div class="img-desc">
+                        <h3>Top 1</h3>
+                        <p>Beach Destinations</p>
+                    </div>
+                </div>
+                <div class="top2 preset">
+                    <img src="https://source.unsplash.com/260x400/?mountain and forest">
+                    <div class="img-desc">
+                        <h3>Top 2</h3>
+                        <p>Fresh Air of Mountains</p>
+                    </div>
+                </div>
+                <div class="top3 preset">
+                    <img src="https://source.unsplash.com/260x400/?mountain and lakes">
+                    <div class="img-desc">
+                        <h3>Top 3</h3>
+                        <p>Weekend Gateways</p>
+                    </div>
+                </div>
+                <div class="top4 preset">
+                    <img src="https://source.unsplash.com/260x400/?Hill Stations">
+                    <div class="img-desc">
+                        <h3>Top 4</h3>
+                        <p>Hill Stations</p>
+                    </div>
+                </div>
+                <div class="top5 preset">
+                    <img src="https://source.unsplash.com/260x400/?advanture destination">
+                    <div class="img-desc">
+                        <h3>Top 5</h3>
+                        <p>Advanture Destinations</p>
+                    </div>
+                </div>
+                <div class="top6 preset">
+                    <img src="https://source.unsplash.com/260x400/?Western Ghats">
+                    <div class="img-desc">
+                        <h3>Top 6</h3>
+                        <p>Western Ghats</p>
+                    </div>
+                </div>
+                <div class="top7 preset">
+                    <img src="https://source.unsplash.com/260x400/?Forests">
+                    <div class="img-desc">
+                        <h3>Top 7</h3>
+                        <p>Beauty of Nature</p>
+                    </div>
+                </div>
+                <div class="top8 preset">
+                    <img src="https://source.unsplash.com/260x400/?Heritage sites">
+                    <div class="img-desc">
+                        <h3>Top 8</h3>
+                        <p>Heritage Destinations</p>
+                    </div>
+                </div>
+                <div class="top9 preset">
+                    <img src="https://source.unsplash.com/260x400/?tamples,pilgrimage">
+                    <div class="img-desc">
+                        <h3>Top 9</h3>
+                        <p>Pilgrimage Destination</p>
+                    </div>
+                </div>
+                <div class="top10 preset">
+                    <img src="https://source.unsplash.com/260x400/?city at night">
+                    <div class="img-desc">
+                        <h3>Top 10</h3>
+                        <p>Cities Destination</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="state">
+            <h2>Explore States of India</h2>
+            <div class="slider">
+                <div class="preset">
+                    <img src="https://source.unsplash.com/260x400/?tigers">
+                    <div class="img-desc">
+                        <p>Wildlife Hotspot in Maharastra</p>
+                    </div>
+                </div>
+                <div class="preset">
+                    <img src="https://source.unsplash.com/260x400/?dams">
+                    <div class="img-desc">
+                        <p>Eastwhile Abode of Rules of Rulers in Andhra Pradesh</p>
+                    </div>
+                </div>
+                <div class="preset">
+                    <img src="https://source.unsplash.com/260x400/?Sayadri Ranges">
+                    <div class="img-desc">
+                        <p>Hidden Gem in Sayadri Ranges</p>
+                    </div>
+                </div>
+                <div class="preset">
+                    <img src="https://source.unsplash.com/260x400/?Shimla">
+                    <div class="img-desc">
+                        <p>Striking Hill Resort near Shimla</p>
+                    </div>
+                </div>
+                <div class="preset">
+                    <img src="https://source.unsplash.com/260x400/?tamples od andhra pradesh">
+                    <div class="img-desc">
+                        <p>A Spiritual Gateway in Andhra Pradesh</p>
+                    </div>
+                </div>
+                <div class="preset">
+                    <img src="https://source.unsplash.com/260x400/?Ancient City">
+                    <div class="img-desc">
+                        <p>Ancient City in Tamil Nadu</p>
+                    </div>
+                </div>
+                <div class="preset">
+                    <img src="https://source.unsplash.com/260x400/?apple garden in hills">
+                    <div class="img-desc">
+                        <p>Beautiful Apple & Peach Orchards</p>
+                    </div>
+                </div>
+                <div class="preset">
+                    <img src="https://source.unsplash.com/260x400/?Howrah Bridge">
+                    <div class="img-desc">
+                        <p>Kolkata Iconic Howrah Bridge</p>
+                    </div>
+                </div>
+                <div class="preset">
+                    <img src="https://source.unsplash.com/260x400/?Runn of Kutch">
+                    <div class="img-desc">
+                        <p>Iconic Runn of Kutch</p>
+                    </div>
+                </div>
+                <div class="preset">
+                    <img src="https://source.unsplash.com/260x400/?Andaman and nicobar,Lakshadeep">
+                    <div class="img-desc">
+                        <p>Island Group of India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="footer-about">
+            <div class="about-1 about">
+                <h4>Why MakeMyTrip?</h4>
+                <p>Established in 2000, MakeMyTrip has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers. The experience of booking your flight tickets, hotel stay, and holiday package through our desktop site or mobile app can be done with complete ease and no hassles at all. We also deliver amazing offers, such as Instant Discounts, Fare Calendar, MyRewardsProgram, MyWallet, and many more while updating them from time to time to better suit our customers’ evolving needs and demands.</p>
+            </div>
+            <div class="about-2 about">
+                <h4>Booking Flights and MakeMyTrip</h4>
+                <p>At MakeMyTrip, you can find the best of deals and cheap air tickets to any place you want by booking your tickets on our website or app. Being India’s leading website for hotel, flight, and holiday bookings, MakeMyTrip helps you book flight tickets that are affordable and customized to your convenience. With customer satisfaction being our ultimate goal, we also have a 24/7 dedicated helpline to cater to our customer’s queries and concerns. Serving over 5 million happy customers, we at MakeMyTrip are glad to fulfill the dreams of folks who need a quick and easy means to find air tickets. You can get a hold of the cheapest flight of your choice today while also enjoying the other available options for your travel needs with us.</p>
+            </div>
+            <div class="about-3 about">
+                <h4>Domestic Flights with MakeMyTrip</h4>
+                <p>MakeMyTrip is India's leading player for flight bookings. With the cheapest fare guarantee, experience great value at the lowest price. Instant notifications ensure current flight status, instant fare drops, amazing discounts, instant refunds and rebook options, price comparisons and many more interesting features.</p>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="box">
+                <div class="link">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://instagram.com/shounakmahata18?igshid=ZDc4ODBmNjlmNQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/shounakmahata/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="copywrite">
+                    <p>&copy; 2023 MAKEMYTRIP PVT. LTD.</p>
+                    <div class="location">
+                        <span>Country</span>
+                        <a href="#">India</a>
+                        <a href="#">USA</a>
+                        <a href="#">UAE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/JS/index.js"></script>
+</body>
+
+</html>

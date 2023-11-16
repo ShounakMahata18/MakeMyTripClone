@@ -1,0 +1,783 @@
+.icon .bar{
+    background-color: white;
+}
+
+.icon #bar1{
+    transform: translateY(3px) rotate(-45deg);
+}
+
+.icon #bar3{
+    transform:  translateY(-3px) rotate(45deg);
+}
+
+.icon #bar2{
+    opacity: 0;
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 660px) {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    header{
+        height: 620px;
+    }
+
+    nav{
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .logo img{
+        width: 97px;
+        height: 31px;
+    }
+    
+    .login{
+        font-size: 10px;
+        height: 25px;
+        width: 138px;
+    }
+    
+    #menu{
+        height: 35px;
+        width: 25px;
+        margin: 15px 0 0 20px;
+        cursor: pointer;
+        z-index: 100;
+        display: block;
+    }
+
+    #show-none{
+        background-image: linear-gradient(to bottom,
+            #051322, #15457c);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 5);
+        width: 200px; 
+        height: 200px;
+        align-items: start;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 30px;
+        border-radius: 20px;
+        opacity: 90%;
+        position: absolute;
+        top: 100px;
+        right: 10vw;
+        z-index: 100;
+        display: none;
+    }
+    
+    .bar{
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 3px;
+        transition: 0.3s ease;
+    }
+    
+    #bar1{
+        transform: translateY(-4px);
+    }
+    
+    #bar3{
+        transform: translateY(4px);
+    }
+
+    ul li a {
+        font-size: 10px;
+    }
+    
+    .lang {
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    .context{
+        padding: 2px 0 2px 6px;
+    }
+
+    .all-services{
+        width: 70vw;
+        border-radius: 10px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: start;
+    }
+    .service a {
+        padding: 0 7px;
+    }
+    .service a i {
+        font-size: 20px;
+    }
+    .service a p{
+        font-size: 0.85rem;
+    }
+    .multi-line{
+        display: flex;
+        flex-direction: column;
+    }
+    .multi-line p {
+        font-size: 0.85rem;
+    }
+    .desc{
+        padding: 70px 25px 20px ;
+    }
+    .desc p{
+        font-size: 12px;
+    }
+    .way{
+        height: 20px;
+    }
+    .way label{
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+    }
+    .travel{
+        display: flex;
+        justify-content: center;
+        align-items: centers;
+    }
+    .orientation1{
+        width: 11.5vw;
+        padding: 10px;
+    }
+    .orientation1 h2{
+        font-size: 17px;
+    }
+    .selector{
+        width: 10vw;
+    }
+    .orientation2{
+        width: 11.5vw;
+        padding: 10px;  
+    }
+    .orientation2 h2{
+        font-size: 17px;
+    }
+    .orientation2 input{
+        width: 10vw;
+        height: 30px;
+    }
+    .orientation3{
+        width: 11.5vw;
+        padding: 10px; 
+    }
+    .orientation3 h2{
+        font-size: 17px;
+    }
+    .traveller{
+        font-size: 20px;
+    }
+    .no-of-traveller p{
+        font-size: 12px;
+    }
+    .travel-class{
+        padding-left: 5px;
+    }
+    .travel-class select{
+        font-size: 15px;
+        width: 11.5vw;
+        padding-left: 3px;
+    }
+    .eligibility{
+        display: flex;
+        flex-direction: column;
+    }
+    .eligibility-left{
+        padding: 0 20px;
+    }
+    .eligibility-left h3{
+        width: 55px;
+        font-size: 13px;
+        padding-right: 10px;
+    }
+    .radio {
+        padding: 0 5px;
+    }
+    
+    .eligibility-left .radio label {
+        font-size: 10px;
+        width: 50px;
+        padding: 0 10px;
+    }
+    .eligibility-right{
+        padding: 20px 0 0 15px;
+    }
+    .search-btn{
+        width: 20vw;
+        position: relative;
+        left: 30vw;
+    }
+    .explore-more{
+        width: 23vw;
+        position: relative;
+        left: 30vw;
+        bottom: 20px;
+    }
+
+    .second-container {
+        height: 44px;
+        border-radius: 22px;
+        background-color: white;
+        display: flex;
+        justify-content: start;
+        overflow-x: auto;
+        position: relative;
+        top: -10px;
+    }
+    .where-2-go {
+        padding: 0 0 0 5px;
+    }
+
+    .where-2-go i{
+        font-size: 12px;
+    }
+    
+    .where-2-go a {
+        padding-left: 5px;
+        font-size: 9px;
+    }
+
+    .trip-money{
+        padding: 0 0 0 5px;      
+    }
+    .trip-money i{
+        font-size: 12px;      
+    }
+    .order1 {
+        width: 55px;
+        padding-left: 5px;
+    }
+    .trip-money .order1 a{
+        font-size: 9px;
+    }
+    
+    .order1 p {
+        font-size: 7px;
+    }
+    .intrnational-flights {
+        padding: 0 0 0 5px;
+    }
+
+    .intrnational-flights i{
+        font-size: 12px;
+    }
+
+    .order2{
+        width: 135px;
+        padding-left: 5px;
+    }
+    
+    .intrnational-flights .order2 a {
+        font-size: 9px;
+    }
+    .intrnational-flights .order2 p {
+        font-size: 7px;
+        width: 130px;
+    }
+    .mice {
+        padding: 0 0 0 5px;
+    }
+    .mice i{
+        font-size: 12px;
+    }
+    .order3{
+        width: 110px;
+        padding-left: 5px;
+    }
+    .mice .order3 a {
+        font-size: 9px;
+    }
+    .mice .order3 p {
+        font-size: 9px;
+    }
+    .gift-card {
+        padding: 0 0 0 5px;
+    }
+
+    .gift-card i{
+        font-size: 12px;
+    }
+    
+    .gift-card a {
+        padding-left: 5px;
+        font-size: 9px;
+    }
+    .handpicked-collection{
+        width: 80vw;
+        height: 450px;
+    }
+    .handpicked-collection h2{
+        font-size: 15px;
+        padding: 25px 0 10px 30px;
+    }
+    .handpicked-collection .slider {
+        margin: 0 15px;
+    }
+    .handpicked-collection .slider .preset img {
+        width: 230px;
+    }
+    .state{
+        width: 80vw;
+        height: 450px;
+    }
+    .state h2 {
+        font-size: 15px;
+        padding: 25px 0 10px 30px;
+    }
+    .state .slider {
+        margin: 0 15px;
+    }
+    .state .slider .preset img {
+        width: 230px;
+    }
+    .footer-about{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        width: 80vw;
+        height: 200px;
+    }
+    .footer-container{
+        height: 100px;
+    }
+    .box {
+        width: 80vw;
+        height: 100px;
+    }
+    .link a i {
+        color: white;
+        font-size: 15px;
+        padding: 0 5px;
+    }
+    .copywrite p{
+        font-size: 10px;
+        font-weight: 700;
+        color: white;
+    }
+    
+    .copywrite .location span {
+        font-size: 10px;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .copywrite .location a {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        font-weight: 700;
+    }
+  }
+
+@media only screen and (max-width: 660px) {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    header{
+        height: 870px;
+    }
+
+    nav{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .navbar{
+        padding-top: 20px;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        width: 85px;
+        height: 27px;
+    }
+    
+    .login{
+        font-size: 10px;
+        height: 25px;
+        width: 70px;
+    }
+
+    .login .context li a{
+        font-size: 10px;
+    }
+    
+    #menu{
+        height: 35px;
+        width: 25px;
+        margin: 15px 0 0 10px;
+        cursor: pointer;
+        z-index: 100;
+        display: block;
+    }
+
+    #show-none{
+        background-image: linear-gradient(to bottom,
+            #051322, #15457c);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 5);
+        width: 200px; 
+        height: 200px;
+        align-items: start;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 30px;
+        border-radius: 20px;
+        opacity: 90%;
+        position: absolute;
+        top: 100px;
+        right: calc(20vw);
+        z-index: 100;
+        display: none;
+    }
+
+    .context{
+        padding: 2px 0 2px 6px;
+    }
+
+    .lang{
+        background-color: transparent;
+    }
+    
+    .bar{
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 3px;
+        transition: 0.3s ease;
+    }
+    
+    #bar1{
+        transform: translateY(-4px);
+    }
+    
+    #bar3{
+        transform: translateY(4px);
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    .all-services{
+        width: 300px;
+        height: 80px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin: 30px 0 30px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .services{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        top: 0px;
+        box-shadow: 0px 0px 0px 0px;
+    }
+    .service a {
+        padding: 0 25px;
+    }
+    .service a p{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    .desc{
+        display: flex;
+        flex-direction: column;
+        padding: 70px 25px 0px ;
+    }
+    .desc p{
+        font-size: 11px;
+        margin-top: 20px;
+        position: relative;
+        bottom: 70px;
+    }
+    .way{
+        height: 20px;
+    }
+    .way label{
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .travel{
+        display: flex;
+        flex-direction: column;
+    }
+    .selector {
+        height: 30px;
+        width: 100px;
+        background-color: white;
+        border: none;
+    }
+    .orient1{
+        display: flex;
+        flex-direction: row;
+    }
+    .orientation1{
+        position: relative;
+        width: 90px;
+        height: 60px;
+        font-size: 11px;
+    }
+    .from{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .to{
+        border-top-right-radius: 10px;
+    }
+    .orient2{
+        display: flex;
+        flex-direction: row;
+    }
+    .orientation2{
+        position: relative;
+        width: 90px;
+        height: 60px;
+        font-size: 11px;
+    }
+    .orientation2 input {
+        height: 90px;
+        width: 90px;
+    }
+    .travellers{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .orientation3 {
+        width: 221.6px;
+        height: 90px;
+        border: 1px solid #05132250;
+        font-size: 11px;
+    }
+    .eligibility{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .eligibility-left{
+        padding: 0px 20px 20px;
+    }
+    .eligibility-left h3 {
+        font-size: 10px;
+        padding-right: 5px;
+        width: 28px;
+    }
+    .radio{
+        padding: 0 5px;
+    }
+    .radio input{
+        width: 9px;
+    }
+    .eligibility-left .radio label {
+        font-size: 8px;
+        width: 25px;
+        padding: 0 5px;
+    }
+    .eligibility-right {
+        padding: 0 20px;
+    }
+    .eligibility-right h3 {
+        font-size: 11px;
+    }
+    .search{
+        font-size: 9px;
+    }
+    .search-btn{
+        width: 100px;
+        height: 20px;
+        padding: 12px 10px 10px;
+        border-radius: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 21px;
+        left: 90px;
+    }
+    .search-btn a {
+        font-size: 17px;
+    }
+    .explore-more {
+        width: 150px;
+        position: relative;
+        bottom: 10px;
+        left: 75px;
+        padding-top: 5px;
+    }
+    .explore-more p {
+        font-weight: 600;
+        font-size: 10px;
+    }
+    
+    .explore-more i {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+    .second-container {
+        height: 44px;
+        border-radius: 22px;
+        background-color: white;
+        display: flex;
+        justify-content: start;
+        overflow-x: auto;
+        position: relative;
+        top: 17px;
+    }
+    .where-2-go {
+        padding: 0 0 0 5px;
+    }
+
+    .where-2-go i{
+        font-size: 12px;
+    }
+    
+    .where-2-go a {
+        padding-left: 5px;
+        font-size: 9px;
+    }
+
+    .trip-money{
+        padding: 0 0 0 5px;      
+    }
+    .trip-money i{
+        font-size: 12px;      
+    }
+    .order1 {
+        width: 55px;
+        padding-left: 5px;
+    }
+    .trip-money .order1 a{
+        font-size: 9px;
+    }
+    
+    .order1 p {
+        font-size: 7px;
+    }
+    .intrnational-flights {
+        padding: 0 0 0 5px;
+    }
+
+    .intrnational-flights i{
+        font-size: 12px;
+    }
+
+    .order2{
+        width: 135px;
+        padding-left: 5px;
+    }
+    
+    .intrnational-flights .order2 a {
+        font-size: 9px;
+    }
+    .intrnational-flights .order2 p {
+        font-size: 7px;
+        width: 130px;
+    }
+    .mice {
+        padding: 0 0 0 5px;
+    }
+    .mice i{
+        font-size: 12px;
+    }
+    .order3{
+        width: 110px;
+        padding-left: 5px;
+    }
+    .mice .order3 a {
+        font-size: 9px;
+    }
+    .mice .order3 p {
+        font-size: 9px;
+    }
+    .gift-card {
+        padding: 0 0 0 5px;
+    }
+
+    .gift-card i{
+        font-size: 12px;
+    }
+    
+    .gift-card a {
+        padding-left: 5px;
+        font-size: 9px;
+    }
+
+    .handpicked-collection{
+        width: 300px;
+        height: 500px;
+    }
+    .handpicked-collection h2{
+        font-size: 15px;
+        padding: 25px 0 10px 30px;
+    }
+    .handpicked-collection .slider {
+        margin: 0 15px;
+    }
+    .handpicked-collection .slider .preset img {
+        width: 250px;
+    }
+    .state{
+        width: 300px;
+        height: 500px;
+    }
+    .state h2 {
+        font-size: 15px;
+        padding: 25px 0 10px 30px;
+    }
+    .state .slider {
+        margin: 0 15px;
+    }
+    .state .slider .preset img {
+        width: 250px;
+    }
+    .footer-about{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        width: 300px;
+    }
+    .about-2{
+        margin-bottom: 30px;
+    }
+    .footer-container{
+        height: 100px;
+    }
+    .box {
+        width: 300px;
+        height: 100px;
+    }
+    .link a i {
+        color: white;
+        font-size: 15px;
+        padding: 0 5px;
+    }
+    .copywrite p{
+        font-size: 10px;
+        font-weight: 700;
+        color: white;
+    }
+    
+    .copywrite .location span {
+        font-size: 10px;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .copywrite .location a {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        font-weight: 700;
+    }
+  }

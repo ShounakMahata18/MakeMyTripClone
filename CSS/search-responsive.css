@@ -1,0 +1,316 @@
+.icon .bar{
+    background-color: white;
+}
+
+.icon #bar1{
+    transform: translateY(3px) rotate(-45deg);
+}
+
+.icon #bar3{
+    transform:  translateY(-3px) rotate(45deg);
+}
+
+.icon #bar2{
+    opacity: 0;
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 660px) {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    nav{
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .logo img{
+        width: 97px;
+        height: 31px;
+    }
+    
+    .login{
+        font-size: 10px;
+        height: 25px;
+        width: 138px;
+    }
+    
+    #menu{
+        height: 35px;
+        width: 25px;
+        margin: 15px 0 0 20px;
+        cursor: pointer;
+        z-index: 100;
+        display: block;
+    }
+
+    #show-none{
+        background-image: linear-gradient(to bottom,
+            #051322, #15457c);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 5);
+        width: 200px; 
+        height: 200px;
+        align-items: start;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 30px;
+        border-radius: 20px;
+        opacity: 90%;
+        position: absolute;
+        top: 100px;
+        right: 10vw;
+        z-index: 100;
+        display: none;
+    }
+    
+    .bar{
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 3px;
+        transition: 0.3s ease;
+    }
+    
+    #bar1{
+        transform: translateY(-4px);
+    }
+    
+    #bar3{
+        transform: translateY(4px);
+    }
+
+    ul li a {
+        font-size: 10px;
+    }
+    
+    .lang {
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    .context{
+        padding: 2px 0 2px 6px;
+    }
+
+    .all-flights{
+        width: 80vw;
+    }
+
+    .flights{
+        width: 80vw;
+    }
+
+    .details{
+        box-sizing: border-box;
+        width: calc(80vw / 5);
+    }
+
+    .details h2{
+        width: 100px;
+    }
+
+    .details li{
+        width: calc(80vw / 5 - 40px);
+        font-size: 13px;
+        word-wrap: break-word;
+    }
+    
+    .footer-about{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        width: 80vw;
+        height: 200px;
+    }
+    .footer-container{
+        height: 100px;
+    }
+    .box {
+        width: 80vw;
+        height: 100px;
+    }
+    .link a i {
+        color: white;
+        font-size: 15px;
+        padding: 0 5px;
+    }
+    .copywrite p{
+        font-size: 10px;
+        font-weight: 700;
+        color: white;
+    }
+    
+    .copywrite .location span {
+        font-size: 10px;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .copywrite .location a {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        font-weight: 700;
+    }
+  }
+
+@media only screen and (max-width: 660px) {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    nav{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .navbar{
+        padding-top: 20px;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        width: 85px;
+        height: 27px;
+    }
+    
+    .login{
+        font-size: 10px;
+        height: 25px;
+        width: 70px;
+    }
+
+    .login .context li a{
+        font-size: 10px;
+    }
+    
+    #menu{
+        height: 35px;
+        width: 25px;
+        margin: 15px 0 0 10px;
+        cursor: pointer;
+        z-index: 100;
+        display: block;
+    }
+
+    #show-none{
+        background-image: linear-gradient(to bottom,
+            #051322, #15457c);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 5);
+        width: 200px; 
+        height: 200px;
+        align-items: start;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 30px;
+        border-radius: 20px;
+        opacity: 90%;
+        position: absolute;
+        top: 100px;
+        right: calc(20vw);
+        z-index: 100;
+        display: none;
+    }
+
+    .context{
+        padding: 2px 0 2px 6px;
+    }
+
+    .lang{
+        background-color: transparent;
+    }
+    
+    .bar{
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 3px;
+        transition: 0.3s ease;
+    }
+    
+    #bar1{
+        transform: translateY(-4px);
+    }
+    
+    #bar3{
+        transform: translateY(4px);
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    .all-flights{
+        width: 90vw;
+    }
+
+    .flights{
+        width: 90vw;
+    }
+
+    .details{
+        box-sizing: border-box;
+        width: calc(90vw / 5);
+    }
+
+    .details ul{
+        margin: 10px;
+    }
+
+    .details h2{
+        font-size: 10px;
+        width: 50px;
+    }
+
+    .details li{
+        width: calc(90vw / 5 - 10px);
+        font-size: 9px;
+        word-wrap: break-word;
+    }
+    
+    .footer-about{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        width: 300px;
+    }
+    .about-2{
+        margin-bottom: 30px;
+    }
+    .footer-container{
+        height: 100px;
+    }
+    .box {
+        width: 300px;
+        height: 100px;
+    }
+    .link a i {
+        color: white;
+        font-size: 15px;
+        padding: 0 5px;
+    }
+    .copywrite p{
+        font-size: 10px;
+        font-weight: 700;
+        color: white;
+    }
+    
+    .copywrite .location span {
+        font-size: 10px;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .copywrite .location a {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        font-weight: 700;
+    }
+  }

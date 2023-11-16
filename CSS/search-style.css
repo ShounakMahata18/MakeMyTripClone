@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ubuntu&display=swap');
+
+/* margin and padding css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header css  */
+header {
+    background-image: linear-gradient(to bottom,
+            #051322, #15457c);
+    height: calc(100vh - 150px);
+    width: 100vw;
+}
+
+nav {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo {
+    padding: 1px 0;
+}
+
+.logo img {
+    width: 113px;
+    height: 36px;
+}
+
+nav ul {
+    display: flex;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.badge i {
+    rotate: 90deg;
+    font-size: 20px;
+    color: rgb(255, 13, 13);
+}
+
+.business i {
+    font-size: 20px;
+    color: rgb(153, 17, 232);
+}
+
+.trips i {
+    font-size: 20px;
+    color: rgb(92, 228, 252);
+}
+
+.context {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.context p {
+    color: white;
+    font-size: 10px;
+}
+
+.login {
+    background-image: linear-gradient(93deg, #53b2fe, #065af3);
+    border-radius: 5px;
+}
+
+.lang {
+    background-color: hsla(0, 0%, 100%, .15);
+    border-radius: 5px;
+}
+
+#menu{
+    display: none;
+}
+
+li {
+    list-style: none;
+    font-weight: bolder;
+}
+
+nav ul{
+    padding-right: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.context li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+}
+
+.right-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.lang img {
+    width: 20px
+}
+
+/* Flight Description */
+
+.all-flights{
+    width: 1200px;
+    /* here height is adjusted according to no of search result in js */
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.flights{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.details{
+    width: 240px;
+    /* here height is adjusted according to no of search result in js */
+    border: 1px solid #15457c;
+}
+
+.details h2{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    width: 200px;
+    height: 30px;
+    margin: 10px auto;
+    text-align: center;
+    border-bottom: 1px solid #15457c;
+}
+
+.details ul{
+    margin: 20px;
+}
+
+.details li{
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "ubantu", sans-serif;
+    margin: 20px 0px;
+}
+
+/* Footer css */
+
+.about {
+    width: 360px;
+    height: 300px;
+}
+
+.footer-container {
+    font-family: 'Noto Sans', sans-serif;
+    height: 150px;
+    width: 100vw;
+    background-color: black;
+}
+
+.box {
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link a i {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.copywrite p{
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.copywrite .location span {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.copywrite .location a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
