@@ -47,7 +47,7 @@ function getRandomDates() {
     for(let i = 0; i < noOfSearchResult; i++){
         let random = Math.floor(Math.random() * (0.2 * noOfSearchResult));
         date.setDate(date.getDate() + random);
-        let randomDates = date.getDate()+'-'+date.getMonth()+'-'+date.getFullYear();
+        let randomDates = date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear();
         dates.push(randomDates);
     } 
     dates.sort((a, b) => a-b);
